@@ -1,0 +1,18 @@
+{
+    "name": "sitepoint/guestbook",
+    "description": "A guestbook app",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TJ LaBaugh",
+            "email": "tjlabaugh@gmail.com"
+        }
+    ],
+    "require": {
+        "catfan/medoo": "^1.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.0"
+    }
+}
