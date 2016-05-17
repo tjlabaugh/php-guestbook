@@ -4,9 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ad65c71ecd29a1a8e574c237fa675841",
-    "content-hash": "50c5422252920d6bcf8b16ee850c6ffa",
+    "hash": "96d9e0f0560830f5add47684be88693a",
+    "content-hash": "bac5f219bd0d7c82e43a06ddddf420fe",
     "packages": [
+        {
+            "name": "byrokrat/checkdigit",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/byrokrat/checkdigit.git",
+                "reference": "66fe3084136110e06c3756dffaf468f9bd991754"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/byrokrat/checkdigit/zipball/66fe3084136110e06c3756dffaf468f9bd991754",
+                "reference": "66fe3084136110e06c3756dffaf468f9bd991754",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "byrokrat\\checkdigit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Hannes Forsgård",
+                    "email": "hannes.forsgard@fripost.org"
+                }
+            ],
+            "description": "Helper classes to calculate and validate ckecksums",
+            "homepage": "https://github.com/byrokrat/checkdigit",
+            "keywords": [
+                "Check digit",
+                "luhn",
+                "modulo 10",
+                "modulo 11",
+                "modulo 97"
+            ],
+            "time": "2016-05-04 09:43:44"
+        },
         {
             "name": "catfan/medoo",
             "version": "v1.0.2",
@@ -61,6 +106,127 @@
                 "sqlite"
             ],
             "time": "2016-02-14 16:03:42"
+        },
+        {
+            "name": "giggsey/libphonenumber-for-php",
+            "version": "7.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/libphonenumber-for-php.git",
+                "reference": "0681962d2feba35935d1bd06d3088b548801b76a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/0681962d2feba35935d1bd06d3088b548801b76a",
+                "reference": "0681962d2feba35935d1bd06d3088b548801b76a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*"
+            },
+            "require-dev": {
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "dev-master",
+                "phing/phing": "~2.7",
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~0.6",
+                "symfony/console": "^2.5"
+            },
+            "suggest": {
+                "ext-intl": "To use the geocoder and carrier mapping"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "libphonenumber": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "http://giggsey.com/"
+                }
+            ],
+            "description": "PHP Port of Google's libphonenumber",
+            "homepage": "https://github.com/giggsey/libphonenumber-for-php",
+            "keywords": [
+                "geocoding",
+                "geolocation",
+                "libphonenumber",
+                "mobile",
+                "phonenumber",
+                "validation"
+            ],
+            "time": "2016-05-04 08:29:21"
+        },
+        {
+            "name": "particle/validator",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/particle-php/Validator.git",
+                "reference": "a7d08c95831fd09b8907ff2ef7dd9715cb59af1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/particle-php/Validator/zipball/a7d08c95831fd09b8907ff2ef7dd9715cb59af1d",
+                "reference": "a7d08c95831fd09b8907ff2ef7dd9715cb59af1d",
+                "shasum": ""
+            },
+            "require": {
+                "byrokrat/checkdigit": "^1.0",
+                "giggsey/libphonenumber-for-php": "^7.2",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Particle\\Validator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Berry Langerak",
+                    "email": "berry@berryllium.nl",
+                    "role": "developer"
+                },
+                {
+                    "name": "Rick van der Staaij",
+                    "homepage": "http://rickvanderstaaij.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Flexible and highly usable validation library with no dependencies.",
+            "homepage": "http://github.com/particle-php/validator",
+            "keywords": [
+                "validation",
+                "validator"
+            ],
+            "time": "2016-03-17 07:30:58"
         }
     ],
     "packages-dev": [
